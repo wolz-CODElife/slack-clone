@@ -3,6 +3,7 @@ import './Header.css'
 import { Avatar } from '@material-ui/core'
 import AccessTimeIcon from '@material-ui/icons/AccessTime'
 import SearchIcon from '@material-ui/icons/Search'
+import HelpOutlineicon from '@material-ui/icons/HelpOutline'
 
 const Header = () => {
     return (
@@ -12,9 +13,12 @@ const Header = () => {
                 <AccessTimeIcon />
             </div>
             <div className="header_search">
-                <Search />
+                <SearchIcon />
+                <input type="text" placeholder="Search CODElife slack-clone" />
             </div>
-            <div className="header_right"></div>
+            <div className="header_right">
+                <HelpOutlineicon />
+            </div>
         </div>
     )
 }
