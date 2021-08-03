@@ -21,7 +21,7 @@ const ChatInput = ({ channelName, channelId }) => {
     }
     return (
         <div className="chatInput">
-            <form>
+            <form onSubmit={sendMessage}>
                 <input
                     type="text"
                     placeholder={`Message #${channelName}`}
